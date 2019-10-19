@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+html, body, main {
+  background: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+}
