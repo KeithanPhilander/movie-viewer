@@ -6,11 +6,11 @@ import { Subscription } from 'rxjs';
 import { NavbarService } from 'src/app/navbar/services/navbar.service';
 
 @Component({
-  selector: 'app-movie-detail',
-  templateUrl: './movie-detail.component.html',
-  styleUrls: ['./movie-detail.component.css']
+  selector: 'app-movie-preview-container',
+  templateUrl: './movie-preview-container.component.html',
+  styleUrls: ['./movie-preview-container.component.css']
 })
-export class MovieDetailComponent implements OnInit, OnDestroy{
+export class MoviePreviewContainerComponent implements OnInit, OnDestroy{
 
   id: number;
   movie: Movie;
