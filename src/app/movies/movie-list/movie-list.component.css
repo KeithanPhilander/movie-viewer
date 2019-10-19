@@ -2,11 +2,35 @@ img {
   max-width: 200px;
   height: 300px;
   object-fit: cover;
-  transition: ease-in .3s;
+  transition: all .3s;
 }
 
 img:hover {
-  filter: blur(5px) brightness(0.5);
+  filter: blur(2px) brightness(.5);
+}
+
+a {
+  position: relative;
+}
+
+p {
+  position: absolute;
+  display: flex;
+  color: rgb(77, 77, 77);
+  padding: 0 30px;
+  text-align: center;
+  position: 0;
+  bottom: 40px;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
+
+img:hover + p {
+  color: rgb(236, 236, 236);
+  opacity: 1;
+  display: block;
 }
 
 ul {
@@ -21,3 +45,4 @@ li {
   margin: 10px;
   width: 200px;
 }
+

@@ -1,6 +1,12 @@
-<div>
-  <img [src]="movie.image">
-  <h2>{{ movie.id }} - {{ movie.name }}</h2>
-  <p>{{ movie.genre }} | {{ movie.releaseYear }}</p>
-  <p>{{ movie.description }}</p>
+<div class="container">
+  <div class="movie-preview">
+    <div class="left">
+      <h1>{{ movie.name }} <span>({{ movie.releaseYear }})</span></h1>
+      <h4>{{ movie.genre }} | {{ movie.releaseYear }}</h4>
+      <p>{{ movie.description }}</p>
+    </div>
+    <div class="right">
+        <img [src]="movie.image">
+    </div>
+  </div>
 </div>

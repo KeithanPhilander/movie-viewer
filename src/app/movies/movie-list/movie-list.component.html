@@ -2,6 +2,7 @@
   <li *ngFor="let movie of movies">
     <a [routerLink]="movie.id">
       <img [src]="movie.image">
+      <p>{{ movie.name }}</p>
     </a>
   </li>
 </ul>
