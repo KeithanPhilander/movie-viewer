@@ -24,10 +24,10 @@ export class MoviePreviewContainerComponent implements OnInit, OnDestroy{
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
-    this.movieSub$ = this.movieService.movie(this.id)
+    this.movieSub$ = this.movieService.movieFromHttp(this.id)
       .subscribe(movie => {
         this.movie = movie;
-        this.navbarService.title.next(movie.name)
+        this.navbarService.title.next(movie.title)
       })
   }
 
