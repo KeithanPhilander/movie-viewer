@@ -1,1 +1,6 @@
-<p>favorites works!</p>
+<ul *ngIf="favorites$ | async as favorites">
+    <li *ngFor="let favorite of favorites">
+        <img [src]="favorite.image">
+        <p>{{ favorite.title }}</p>
+    </li>
+  </ul>

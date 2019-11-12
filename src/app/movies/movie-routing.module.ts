@@ -9,15 +9,16 @@ const routes: Routes = [
   {
     path: '',
     component: MovieListComponent
+  },  
+  {
+    path: 'favorites',
+    component: FavoritesComponent
   },
   {
     path: ':id',
     component: MoviePreviewContainerComponent
   },
-  {
-    path: ':favorites',
-    component: FavoritesComponent
-  }
+
 ];
 
 @NgModule({

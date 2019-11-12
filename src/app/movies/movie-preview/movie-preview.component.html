@@ -4,6 +4,7 @@
       <h1>{{ movie.title }} <span>({{ movie.releaseYear }})</span></h1>
       <h4>{{ movie.genre }} | {{ movie.releaseYear }}</h4>
       <p>{{ movie.description }}</p>
+      <button (click)="addToFavorites(movie.id)">Add to favorites</button>
     </div>
     <div class="right">
         <img [src]="movie.image">
